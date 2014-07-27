@@ -1,4 +1,4 @@
-PacksFreedomMod_3.0
+PacksFreedomMod
 ===================
 
 This is a TotalFreedomMod with a TON more features!
