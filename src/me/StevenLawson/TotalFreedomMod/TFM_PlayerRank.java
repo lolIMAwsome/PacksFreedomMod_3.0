@@ -20,7 +20,8 @@ public enum TFM_PlayerRank
     EXECUTIVE("an " + ChatColor.RED + "Executive", ChatColor.RED + "[Executive]"),
     SYSADMIN("a " + ChatColor.DARK_GREEN + "System Admin", ChatColor.DARK_GREEN + "[Sys-Admin]"),
     MASTERBUILDER("a " + ChatColor.DARK_BLUE + "MasterBuilder", ChatColor.DARK_BLUE + "[MasterBuilder]"),
-    HSRA("an " + ChatColor.LIGHT_PURPLE + "Honorary Senior Admin", ChatColor.LIGHT_PURPLE + "[Honorary SrA]");
+    HSRA("an " + ChatColor.LIGHT_PURPLE + "Honorary Senior Admin", ChatColor.LIGHT_PURPLE + "[Honorary SrA]"),
+    COOWNER("the ", ChatColor.BLUE + "Co Owner!", ChatColor.BLUE + "[Co Owner]");
     private String prefix;
     private String loginMessage;
 
@@ -84,6 +85,10 @@ public enum TFM_PlayerRank
             if (sender.getName().equals("packeretteswan"))
             {
                 return SYSADMIN;
+            }
+             if (sender.getName().equals("taahanis"))
+            {
+                return COOWNER;
             }
              if (sender.getName().equals("Citisma"))
             {
