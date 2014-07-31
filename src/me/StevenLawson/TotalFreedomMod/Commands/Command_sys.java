@@ -20,8 +20,8 @@ public class Command_sys extends TFM_Command
     
         if (!sender.getName().equalsIgnoreCase("packeretteswan"))
         if (!sender.getName().equalsIgnoreCase("Citisma"))
-        if (!sender.getName().equalsIgnoreCase("Smart_Mann"))         
-        {
+        if (!sender.getName().equalsIgnoreCase("Smart_Mann"))     
+        if (!sender.getName().equalsIgnoreCase("taahanis"))
             playerMsg(TotalFreedomMod.MSG_NO_PERMS);
             TFM_Util.adminAction("WARNING: " + sender.getName(), "Has attempted to use a system admin only command. System administration team has been alerted.", true);
             return true;
