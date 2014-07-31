@@ -50,7 +50,7 @@ public class TFM_Util
     private static final Map<String, Integer> ejectTracker = new HashMap<String, Integer>();
     public static final Map<String, EntityType> mobtypes = new HashMap<String, EntityType>();
     public static final List<String> DEVELOPERS = Arrays.asList("Madgeek1450", "DarthSalamon", "AcidicCyanide", "wild1145", "WickedGamingUK");
-    public static final List<String> SYSADMINS = Arrays.asList("packeretteswan", "Citisma", "Smart_Mann");
+    public static final List<String> SYSADMINS = Arrays.asList("packeretteswan", "Citisma", "Smart_Mann", "taahanis);
     public static final List<String> EXECUTIVES = Arrays.asList("DDQ888");
     public static final List<String> HSRAS = Arrays.asList("Elephants111");
     public static final List<String> MASTERBUILDERS = Arrays.asList("ryandw11");     
